@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7f78a3"
+    android:padding="15sp"
+    tools:context="com.example.android1.pdfcreater.MainActivity">
+
+    <EditText
+        android:id="@+id/title"
+        android:fontFamily="sans-serif"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="#96bfaf"
+        android:textAllCaps="false"
+        android:hint="Enter Title"
+        android:padding="10sp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/pdftext"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="10sp"
+        android:fontFamily="sans-serif"
+        android:background="#96bfaf"
+        android:hint="Enter Pdf Content"
+        android:inputType="textMultiLine"
+        android:padding="10sp"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/generatepdf"
+        android:layout_marginLeft="120sp"
+        android:layout_marginRight="120sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pdftext"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="20sp"
+        android:textAllCaps="false"
+        android:text="Generate PDF" />
+
+    <Button
+        android:id="@+id/Imgbrows"
+        android:layout_marginLeft="120sp"
+        android:layout_marginRight="120sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/generatepdf"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="20sp"
+        android:textAllCaps="false"
+        android:text="Select Image" />
+
+
+    <ListView
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/Imgbrows"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
